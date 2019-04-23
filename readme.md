@@ -2,11 +2,11 @@
 
 # Description
 
-Custom React enviroment that includes node-server, SaSS support, Mobx State Tree, Jest, live browser detection, and formatting support.
+Custom React enviroment that includes Mobx State Tree, node-server, SaSS support, Jest, live browser detection, and formatting support.
 
 # Setup
 
-1. git clone https://github.com/C-Birdwell/React-Enviroment.git - install project
+1. git clone https://github.com/C-Birdwell/React-Enviroment-MST - install project
 2. yarn install - install node dependencies
 3. Setup server for devolopment
    1. yarn start - starts node server (keep this running in a seperate terminal window)
