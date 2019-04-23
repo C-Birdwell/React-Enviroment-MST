@@ -26,6 +26,9 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "global": "^4.3.2",
     "globally": "^0.0.0",
+    "mobx": "^5.9.4",
+    "mobx-react": "^5.4.3",
+    "mobx-state-tree": "^3.14.0",
     "moment": "^2.24.0",
     "node-sass": "^4.8.3",
     "normalize.css": "7.0.0",
@@ -49,6 +52,7 @@
     "enzyme": "2.9.1",
     "enzyme-to-json": "1.5.1",
     "jest": "20.0.4",
+    "mobx-devtools-mst": "^0.9.21",
     "react-test-renderer": "15.6.1",
     "webpack-dev-server": "^3.3.0"
   }

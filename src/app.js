@@ -1,21 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
 import AppRouter from "./routers/AppRouter";
-import configureStore from "./store/configureStore";
-import { addExpense } from "./actions/expenses";
-import { setTextFilter } from "./actions/filters";
-import getVisibleExpenses from "./selectors/expenses";
-import "normalize.css/normalize.css";
+import { Provider } from "mobx-react";
+
+//import "normalize.css/normalize.css";
 import "./styles/styles.scss";
-import "react-dates/lib/css/_datepicker.css";
+//import "react-dates/lib/css/_datepicker.css";
+import { onPatch } from "mobx-state-tree";
+import makeInspectable from "mobx-devtools-mst";
 
-const store = configureStore();
+import Invoice from "./models/Invoice";
 
-const jsx = (
-  <Provider store={store}>
+const invoice = Invoice.create({ currency: "CAD" });
+
+onPatch(invoice, patch => {
+  console.log(patch);
+});
+makeInspectable(invoice);
+
+const app = (
+  <Provider invoice={invoice}>
     <AppRouter />
   </Provider>
 );
 
-ReactDOM.render(jsx, document.getElementById("app"));
+ReactDOM.render(app, document.getElementById("app"));
