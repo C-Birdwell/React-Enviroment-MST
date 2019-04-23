@@ -2,7 +2,7 @@
 
 # Description
 
-Custom React enviroment that includes node-server, SaSS support, Redux, Jest, live browser detection, and formatting support.
+Custom React enviroment that includes node-server, SaSS support, Mobx State Tree, Jest, live browser detection, and formatting support.
 
 # Setup
 
